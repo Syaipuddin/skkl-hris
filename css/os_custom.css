@@ -1,0 +1,33 @@
+	<style>
+		.btn-link:focus, .btn-link:hover {
+		    color: #23527c;
+		    text-decoration: underline;
+		    background-color: transparent;
+		}
+		.btn-link, .btn-link:active, .btn-link:focus, .btn-link:hover {
+		    border-color: transparent;
+		}
+		.btn-link, .btn-link.active, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
+		    background-color: transparent;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		}
+		.btn-link {
+		    font-weight: 400;
+		    color: #337ab7;
+		    border-radius: 0;
+		}
+		.modal{
+			width: 900px!important;
+			max-height:563px;
+			margin: -250px 0px 0px -448px;
+
+		}
+		input, select{
+			height:28px;
+		}
+		textarea{
+			height:80px;
+			width:300px
+		}
+	</style>

@@ -1,0 +1,1 @@
+<?php	// include "language/Home_library_word.php";	// echo $word[0];	if(!isset($_SESSION)){	   session_start();	}	if($_SESSION['lang'] == 'ID'){	$word = array('Tampilan Terbaik di','',													// 1				  '',''				 );	}	//else if($_SESSION['lang'] == 'EN'){	else{	$word = array('Best View','',															// 1				  '',''				 );	}	?>

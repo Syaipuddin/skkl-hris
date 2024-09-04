@@ -1,0 +1,89 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 125%;
+  padding: 0;
+  margin: 0; }
+  html *, body * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+h1, h2, h3 {
+  line-height: 125%; }
+
+#container {
+  width: 700px;
+  margin: 40px auto; }
+
+#logo {
+  text-align: center;
+  margin-bottom: 40px; }
+  #logo img {
+    max-width: 300px;
+    height: auto; }
+
+#link a {
+  display: inline-block;
+  background: #428BCA;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  text-align: center; }
+  #link a:hover {
+    background-color: #357ebd; }
+
+.col {
+  padding: 40px;
+  float: left; }
+  .col.quicksearch {
+    width: 40%;
+    min-width: 400px; }
+  .col.documentation {
+    width: 60%; }
+
+.quicksearch h1 {
+  text-align: center; }
+.quicksearch #copypaste textarea {
+  width: 100%;
+  min-height: 300px; }
+
+.documentation {
+  border-left: 1px solid #ddd; }
+  .documentation p span, .documentation li span, .documentation p span a, .documentation li span a {
+    font-family: monospace;
+    font-size: 1.1em; }
+  .documentation ol, .documentation ul {
+    margin-top: 10px; }
+    .documentation ol li, .documentation ul li {
+      margin-bottom: 10px;
+      line-height: 140%; }
+      .documentation ol li.required span, .documentation ul li.required span {
+        color: #cc0000; }
+  .documentation a.download {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background: green; }
+    .documentation a.download:hover {
+      background: #006700; }
+  .documentation span.direct_link {
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px; }
+  .documentation a.gotobe {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: #091e3b; }
+    .documentation a.gotobe:hover {
+      background-color: #091e3b;
+      color: #FFF; }
+
+/*# sourceMappingURL=docs.css.map */

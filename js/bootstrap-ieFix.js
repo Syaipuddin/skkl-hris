@@ -1,0 +1,1 @@
+$('.row div[class^="span"]:last-child').addClass('last-child');

@@ -1,0 +1,23 @@
+/* IE6 'Compatability' fixes */
+body {background:#ffffff;
+	background-image:none;
+	padding:0px;
+	text-align: center;
+	}
+.warper{
+	text-align: left;
+}
+ 
+/* Nav Fixes */
+.navbar {background:#333333;}
+.nav-collapse {width:auto;}
+.nav li {display:inline;}
+.nav li a {padding:10px;display:block;width:auto;float:left;color:#cccccc;}
+.nav li a:hover {color:#ffffff;}
+.nav-pills li a {color:#08C;}
+.nav-pills li a:hover {color:#005580;}
+ 
+/* Grid Fixes */
+.row {margin:0;}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12  {float:left;margin:0 30px 0 0;}
+.last-child {margin-right:0;}

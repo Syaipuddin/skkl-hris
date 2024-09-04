@@ -1,0 +1,17 @@
+{
+  "realm": "master",
+  "auth-server-url": "https://sso2.mykg.id",
+  "resource": "HRPORTAL",
+  "public-client": true,
+  "use-resource-role-mappings": true,
+  "realm-public-key": true,
+  "client_id": "HRPORTAL",
+  "enable-cors": true,
+  "credentials": {
+    "secret": "J0XiMuHyDilJGgL2K0BIEVH5F3FgQu6s"
+     },
+     "cors-max-age" : 1000,
+     "cors-allowed-methods" : "POST, PUT, DELETE, GET",
+     "cors-exposed-headers" : "WWW-Authenticate, My-custom-exposed-Header"
+
+}

@@ -1,0 +1,4 @@
+{
+    "backend-usrpwd": "your_backend_client_id:your_backend_client_secret",
+    "realm":"your_realm"
+}

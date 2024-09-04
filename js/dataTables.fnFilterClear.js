@@ -1,0 +1,1 @@
+$.fn.dataTableExt.oApi.fnFilterClear=function(a){a.oPreviousSearch.sSearch="";if(typeof a.aanFeatures.f!="undefined"){var b=a.aanFeatures.f;for(var c=0,d=b.length;c<d;c++){$("input",b[c]).val("")}}for(var c=0,d=a.aoPreSearchCols.length;c<d;c++){a.aoPreSearchCols[c].sSearch=""}a.oApi._fnReDraw(a)}

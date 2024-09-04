@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D-EDGE Quick Search Form</title>
+        <script src="fbparam.js"></script>
+        <script src="fblib.js"></script>
+        <link rel="stylesheet" href="docs.css?ver=20173108-1">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body onload="start()">
+        <div class="col quicksearch">
+            <div id="logo">
+                <img src="delogo.png" />
+            </div>
+            <div id="preview">
+                <form target="dispoprice" name="idForm" class="fbqs">
+    <h2>Online booking</h2>
+    <input type="hidden" name="showPromotions" value="1" />
+        <input type="hidden" name="Clusternames" value="asiasantikahotels" />
+        <!-- Hotel selector -->
+        <div class="field hotel_select">
+            <label for="Hotelnames">Select Hotel</label>
+            <select  name="Hotelnames">
+                <option  value="All">All</option>
+                    <option value="ASIAIDSANTKayanasem">The Kayana Seminyak Bali</option>
+                    <option value="ASIAIDSANTAMAmbon">Amaris Hotel Ambon</option>
+                    <option value="ASIAIDSANTSamay">The Samaya Seminyak Bali</option>
+                    <option value="ASIAIDSANTSamayub">The Samaya Ubud Bali - Full Service Villa &amp; Spa Resort</option>
+                    <option value="ASIAIDSANTAMBandaras">Amaris Hotel Bandara Soekarno Hatta</option>
+                    <option value="ASIAIDSANTAMBanjar">Amaris Hotel Banjar</option>
+                    <option value="ASIAIDSANTBintaro">Hotel Santika Premiere Bintaro</option>
+                    <option value="ASIAIDSANTGubengsu">Hotel Santika Premiere Gubeng Surabaya</option>
+                    <option value="ASIAIDSANTJakarta">Hotel Santika Premiere Slipi Jakarta</option>
+                    <option value="ASIAIDSANTJogja">Hotel Santika Premiere Jogja</option>
+                    <option value="ASIAIDSANTAMBekasiba">Amaris Hotel Bekasi Barat</option>
+                    <option value="ASIAIDSANTKotahara">Hotel Santika Premiere Kota Harapan Indah - Bekasi</option>
+                    <option value="ASIAIDSANTAMBengkulu">Amaris Hotel Bengkulu</option>
+                    <option value="ASIAIDSANTMalang">Hotel Santika Premiere Malang</option>
+                    <option value="ASIAIDSANTSemarang">Hotel Santika Premiere Semarang</option>
+                    <option value="ASIAIDSANTDyandra">Santika Premiere Dyandra Hotel &amp; Convention Medan</option>
+                    <option value="ASIASGSANTAMBugissin">Amaris Hotel Bugis Singapore</option>
+                    <option value="ASIAIDSANTHayamwu">Hotel Santika Premiere Hayam Wuruk Jakarta</option>
+                    <option value="ASIAIDSANTAMCihampel">Amaris Hotel Cihampelas</option>
+                    <option value=" ASIAIDSANTAMCilegon">Amaris Hotel Cilegon</option>
+                    <option value="ASIAIDSANTAMCimanuk">Amaris Hotel Cimanuk</option>
+                    <option value="ASIAIDSANTAMCirebon">Amaris Hotel Cirebon</option>
+                    <option value=" ASIAIDSANTBandung">Hotel Santika Bandung</option>
+                    <option value="ASIAIDSANTBangka">Hotel Santika Bangka</option>
+                    <option value="ASIAIDSANTAMDewisri">Amaris Hotel Dewi Sri</option>
+                    <option value="ASIAIDSANTBanyuwan">Hotel Santika Banyuwangi</option>
+                    <option value="ASIAIDSANTAMDiponego">Amaris Hotel Diponegoro</option>
+                    <option value="ASIAIDSANTBengkulu">Hotel Santika Bengkulu</option>
+                    <option value="ASIAIDSANTBogor">Hotel Santika Bogor</option>
+                    <option value="ASIAIDSANTAMDrsusilo">Amaris Hotel Dr. Susilo Grogol</option>
+                    <option value="ASIAIDSANTSerpong">Hotel Santika BSD City - Serpong</option>
+                    <option value="ASIAIDSANTCikarang">Hotel Santika Cikarang</option>
+                    <option value="ASIAIDSANTAMEmbongma">Amaris Hotel Embong Malang</option>
+                    <option value="ASIAIDSANTCirebon">Hotel Santika Cirebon</option>
+                    <option value="ASIAIDSANTDepok">Hotel Santika Depok</option>
+                    <option value="ASIAIDSANTAMGorontal">Amaris Hotel Gorontalo</option>
+                    <option value="ASIAIDSANTJemursari">Hotel Santika Jemursari</option>
+                    <option value="ASIAIDSANTAMHertasni">Amaris Hotel Hertasning Makassar</option>
+                    <option value="ASIAIDSANTKelapagad">Hotel Santika Kelapa Gading</option>
+                    <option value="ASIAIDSANTAMJuanda">Amaris Hotel Juanda</option>
+                    <option value="ASIAIDSANTAMKarawang">Amaris Hotel Karawang</option>
+                    <option value="ASIAIDSANTAMKupang">Amaris Hotel Kupang</option>
+                    <option value="ASIAIDSANTKuta">Hotel Santika Kuta</option>
+                    <option value="ASIAIDSANTMakassar">Hotel Santika Makassar</option>
+                    <option value="ASIAIDSANTAMCodefink">Amaris Hotel La Codefin Kemang</option>
+                    <option value="ASIAIDSANTMataraml">Hotel Santika Mataram - Lombok</option>
+                    <option value="ASIAIDSANTAMLebakBen">Hotel Amaris Kuta - Bali</option>
+                    <option value="ASIAIDSANTPalu">Hotel Santika Palu</option>
+                    <option value="ASIAIDSANTPandegil">Hotel Santika Pandegiling Surabaya</option>
+                    <option value="ASIAIDSANTAMLegian">Amaris Hotel Legian</option>
+                    <option value="ASIAIDSANTPontianak">Hotel Santika Pontianak</option>
+                    <option value="ASIAIDSANTAMMadiun">Amaris Hotel Madiun</option>
+                    <option value="ASIAIDSANTAMMalang">Amaris Hotel Malang</option>
+                    <option value="ASIAIDSANTSiligita">Hotel Santika Siligita</option>
+                    <option value="ASIAIDSANTTaman">Hotel Santika Taman Mini Indonesia Indah</option>
+                    <option value="ASIAIDSANTAMManggabe">Amaris Hotel Mangga Besar</option>
+                    <option value="ASIAIDSANTTasikmala">Hotel Santika Tasikmalaya</option>
+                    <option value="ASIAIDSANTAMManggaDu">Amaris Hotel Mangga Dua Square</option>
+                    <option value="ASIAIDSANTSeminyak">Hotel Santika Seminyak</option>
+                    <option value="ASIAIDSANTAMMuaraBun">Amaris Hotel Muara Bungo</option>
+                    <option value="ASIAIDSANTAMNagoyahi">Amaris Hotel Nagoya Hill - Batam</option>
+                    <option value="ASIAIDSANTAMPadjajar">Amaris Hotel Padjajaran Bogor</option>
+                    <option value="ASIAIDSANTAMPakuanbo">Amaris Hotel Pakuan Bogor</option>
+                    <option value="ASIAIDSANTAMPalangka">Amaris Hotel Palangkaraya</option>
+                    <option value="ASIAIDSANTAMPalemban">Amaris Hotel Palembang</option>
+                    <option value="ASIAIDSANTAMPanakkuk">Amaris Hotel Panakkukang</option>
+                    <option value="ASIAIDSANTAMPancoran">Amaris Hotel Pancoran</option>
+                    <option value="ASIAIDSANTAMPanglima">Amaris Hotel Panglima Polim</option>
+                    <option value="ASIAIDSANTAMCitrara">Amaris Hotel Citraraya</option>
+                    <option value="ASIAIDSANTAMPangPoli">Amaris Hotel Panglima Polim 2</option>
+                    <option value="ASIAIDSANTAMPasarbar">Amaris Hotel Pasar Baru</option>
+                    <option value="ASIAIDSANTAMPekanbar">Amaris Hotel Pekanbaru</option>
+                    <option value="ASIAIDSANTAMPemuda">Amaris Hotel Pemuda</option>
+                    <option value="ASIAIDSANTAMPonorogo">Amaris Hotel Ponorogo</option>
+                    <option value="ASIAIDSANTAMPratamaN">Amaris Hotel Pratama Nusa Dua</option>
+                    <option value=" ASIAIDSANTAMSamarind">Amaris Hotel Samarinda</option>
+                    <option value="ASIAIDSANTAMSeasonsc">Amaris Hotel Seasons City</option>
+                    <option value="ASIAIDSANTAMSenen">Amaris Hotel Senen</option>
+                    <option value="ASIAIDSANTAMSimpangl">Amaris Hotel Simpang Lima Semarang</option>
+                    <option value="ASIAIDSANTAMSunsetro">Amaris Hotel Sunset Road</option>
+                    <option value="ASIAIDSANTAMTebet">Amaris Hotel Tebet</option>
+                    <option value="ASIAIDSANTAMTendean">Amaris Hotel Tendean</option>
+                    <option value="ASIAIDSANTAMTeukuuma">Amaris Hotel Teuku Umar</option>
+                    <option value="ASIAIDSANTAMThamrinc">Amaris Hotel Thamrin City</option>
+                    <option value="ASIAIDSANTPekalongan">Hotel Santika Pekalongan</option>
+                    <option value="ASIAIDSANTBSDCity">Hotel Santika Premiere ICE BSD City</option>
+                    <option value="ASIAIDSANTAMASBand">Amaris Hotel Setiabudhi Bandung</option>
+                    <option value="ASIAIDSANTAMMakassar">Amaris Pettarani Makassar</option>
+                    <option value="ASIAIDSANTAMMJogja">Amaris Hotel Malioboro Jogja</option>
+                    <option value="ASIAIDSANTAMSatrioKJ">Amaris Hotel Satrio Kuningan Jakarta</option>
+                    <option value="ASIAIDSANTAmarisSolo">Amaris Hotel Sriwedari Solo</option>
+                    <option value="ASIAIDSANTAmarisSa">Amaris Hotel Sagan Jogja</option>
+                    <option value="ASIAIDASIHTLTheAnvay">The Anvaya Beach Resort Bali</option>
+                    <option value="ASIAIDASIHTLHotelSan">Hotel Santika Radial Palembang</option>
+                    <option value="ASIAIDHTLHotelSantik">Hotel Santika Mega City Bekasi</option>
+                    <option value="ASIAIDASIHTLAmarisHo">Amaris Hotel Pluit Jakarta</option>
+                    <option value="ASIAIDHTLAmarisMargo">Amaris Hotel Margorejo Surabaya</option>
+                    <option value="ASIAIDHTLAmarisHotel">Amaris Hotel Serpong Tangerang</option>
+                    <option value="ASIAIDHTLAmarisHote0">Amaris Hotel Mampang</option>
+                    <option value="ASIAIDHTLAmarisHote1">Amaris Hotel Padang</option>
+                    <option value="ASIAIDHTLAmarisHote2">Amaris Hotel Serang Banten</option>
+                    <option value="ASIAIDHTLAmarisHote3">Amaris Hotel Bintoro Surabaya</option>
+                    <option value="ASIAIDHTLHotelSanti0">Hotel Santika Luwuk - Sulawesi Tengah</option>
+                    <option value="ASIAIDASIHTLSantikaP">Santika Premiere Beach Resort Belitung</option>
+                    <option value="ASIAIDASIHTLAmarisKe">Amaris Hotel Fachrudin - Tanah Abang</option>
+                    <option value="ASIAIDHTLSantikaPrem">Hotel Santika Premiere Bandara - Palembang</option>
+                    <option value="ASIAIDHTLSantikaSuka">Hotel Santika Sukabumi</option>
+                    <option value="ASIAIDHTLSantikaAmbo">Hotel Santika Premiere Ambon</option>
+                    <option value="ASIAIDASIHTLHotelSa0">Hotel Santika Garut</option>
+                    <option value="ASIAIDASIHTLKampiSur">Kampi Surabaya</option>
+                    <option value="ASIAIDHTLHotelSanti1">Hotel Santika Gresik</option>
+            </select>
+        </div>    <!-- Check-in -->
+    <div class="field dates checkin">
+        <label>Check-in Date</label>
+        <div class="selects">
+            <select name="fromday">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+            </select>
+            <select name="frommonth">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+            </select>
+            <select name="fromyear">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+            </select>
+        </div>
+    </div>
+    <!-- Nights -->
+    <div class="field nights">
+        <label>Number of nights</label>
+        <select name="nbdays">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+        </select>
+    </div>        <!-- Number of adults selector -->
+        <div class="field adults_select">
+            <label for="adulteresa">Number of adults</label>
+            <select name="adulteresa">
+                    <option value="1" >1</option>
+                    <option value="2" selected="selected">2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
+                    <option value="6" >6</option>
+            </select>
+        </div>        <!-- Number of children selector -->
+        <div class="field children_select">
+            <label for="enfantresa">Number of children</label>
+            <select name="enfantresa">
+                    <option value="0" selected="selected">0</option>
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+            </select>
+        </div>        <!-- Promo Code -->
+        <div class="field promo_code">
+            <label for="AccessCode">Promo Code</label>
+            <input type="text" name="AccessCode" value=""  autocomplete="off" />
+        </div>    <input name="B1" type="button" value="Book now" onclick="hhotelDispoprice(this.form)" class="submit">
+    <a href="javascript:;" onclick="hhotelcancel();" class="cancel">Cancel a booking</a>
+</form>
+            </div>
+            <p class="notes">You can copy-paste the HTML for your form here.</p>
+            <div id="copypaste">
+                <textarea onfocus="this.select();">&lt;form target=&quot;dispoprice&quot; name=&quot;idForm&quot; class=&quot;fbqs&quot;&gt;
+    &lt;h2&gt;Online booking&lt;/h2&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;showPromotions&quot; value=&quot;1&quot; /&gt;
+        &lt;input type=&quot;hidden&quot; name=&quot;Clusternames&quot; value=&quot;asiasantikahotels&quot; /&gt;
+        &lt;!-- Hotel selector --&gt;
+        &lt;div class=&quot;field hotel_select&quot;&gt;
+            &lt;label for=&quot;Hotelnames&quot;&gt;Select Hotel&lt;/label&gt;
+            &lt;select  name=&quot;Hotelnames&quot;&gt;
+                &lt;option  value=&quot;All&quot;&gt;All&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTKayanasem&quot;&gt;The Kayana Seminyak Bali&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMAmbon&quot;&gt;Amaris Hotel Ambon&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSamay&quot;&gt;The Samaya Seminyak Bali&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSamayub&quot;&gt;The Samaya Ubud Bali - Full Service Villa &amp;amp; Spa Resort&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMBandaras&quot;&gt;Amaris Hotel Bandara Soekarno Hatta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMBanjar&quot;&gt;Amaris Hotel Banjar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBintaro&quot;&gt;Hotel Santika Premiere Bintaro&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTGubengsu&quot;&gt;Hotel Santika Premiere Gubeng Surabaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTJakarta&quot;&gt;Hotel Santika Premiere Slipi Jakarta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTJogja&quot;&gt;Hotel Santika Premiere Jogja&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMBekasiba&quot;&gt;Amaris Hotel Bekasi Barat&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTKotahara&quot;&gt;Hotel Santika Premiere Kota Harapan Indah - Bekasi&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMBengkulu&quot;&gt;Amaris Hotel Bengkulu&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTMalang&quot;&gt;Hotel Santika Premiere Malang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSemarang&quot;&gt;Hotel Santika Premiere Semarang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTDyandra&quot;&gt;Santika Premiere Dyandra Hotel &amp;amp; Convention Medan&lt;/option&gt;
+                    &lt;option value=&quot;ASIASGSANTAMBugissin&quot;&gt;Amaris Hotel Bugis Singapore&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTHayamwu&quot;&gt;Hotel Santika Premiere Hayam Wuruk Jakarta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMCihampel&quot;&gt;Amaris Hotel Cihampelas&lt;/option&gt;
+                    &lt;option value=&quot; ASIAIDSANTAMCilegon&quot;&gt;Amaris Hotel Cilegon&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMCimanuk&quot;&gt;Amaris Hotel Cimanuk&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMCirebon&quot;&gt;Amaris Hotel Cirebon&lt;/option&gt;
+                    &lt;option value=&quot; ASIAIDSANTBandung&quot;&gt;Hotel Santika Bandung&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBangka&quot;&gt;Hotel Santika Bangka&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMDewisri&quot;&gt;Amaris Hotel Dewi Sri&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBanyuwan&quot;&gt;Hotel Santika Banyuwangi&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMDiponego&quot;&gt;Amaris Hotel Diponegoro&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBengkulu&quot;&gt;Hotel Santika Bengkulu&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBogor&quot;&gt;Hotel Santika Bogor&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMDrsusilo&quot;&gt;Amaris Hotel Dr. Susilo Grogol&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSerpong&quot;&gt;Hotel Santika BSD City - Serpong&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTCikarang&quot;&gt;Hotel Santika Cikarang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMEmbongma&quot;&gt;Amaris Hotel Embong Malang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTCirebon&quot;&gt;Hotel Santika Cirebon&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTDepok&quot;&gt;Hotel Santika Depok&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMGorontal&quot;&gt;Amaris Hotel Gorontalo&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTJemursari&quot;&gt;Hotel Santika Jemursari&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMHertasni&quot;&gt;Amaris Hotel Hertasning Makassar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTKelapagad&quot;&gt;Hotel Santika Kelapa Gading&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMJuanda&quot;&gt;Amaris Hotel Juanda&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMKarawang&quot;&gt;Amaris Hotel Karawang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMKupang&quot;&gt;Amaris Hotel Kupang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTKuta&quot;&gt;Hotel Santika Kuta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTMakassar&quot;&gt;Hotel Santika Makassar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMCodefink&quot;&gt;Amaris Hotel La Codefin Kemang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTMataraml&quot;&gt;Hotel Santika Mataram - Lombok&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMLebakBen&quot;&gt;Hotel Amaris Kuta - Bali&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTPalu&quot;&gt;Hotel Santika Palu&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTPandegil&quot;&gt;Hotel Santika Pandegiling Surabaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMLegian&quot;&gt;Amaris Hotel Legian&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTPontianak&quot;&gt;Hotel Santika Pontianak&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMMadiun&quot;&gt;Amaris Hotel Madiun&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMMalang&quot;&gt;Amaris Hotel Malang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSiligita&quot;&gt;Hotel Santika Siligita&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTTaman&quot;&gt;Hotel Santika Taman Mini Indonesia Indah&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMManggabe&quot;&gt;Amaris Hotel Mangga Besar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTTasikmala&quot;&gt;Hotel Santika Tasikmalaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMManggaDu&quot;&gt;Amaris Hotel Mangga Dua Square&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTSeminyak&quot;&gt;Hotel Santika Seminyak&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMMuaraBun&quot;&gt;Amaris Hotel Muara Bungo&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMNagoyahi&quot;&gt;Amaris Hotel Nagoya Hill - Batam&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPadjajar&quot;&gt;Amaris Hotel Padjajaran Bogor&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPakuanbo&quot;&gt;Amaris Hotel Pakuan Bogor&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPalangka&quot;&gt;Amaris Hotel Palangkaraya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPalemban&quot;&gt;Amaris Hotel Palembang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPanakkuk&quot;&gt;Amaris Hotel Panakkukang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPancoran&quot;&gt;Amaris Hotel Pancoran&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPanglima&quot;&gt;Amaris Hotel Panglima Polim&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMCitrara&quot;&gt;Amaris Hotel Citraraya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPangPoli&quot;&gt;Amaris Hotel Panglima Polim 2&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPasarbar&quot;&gt;Amaris Hotel Pasar Baru&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPekanbar&quot;&gt;Amaris Hotel Pekanbaru&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPemuda&quot;&gt;Amaris Hotel Pemuda&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPonorogo&quot;&gt;Amaris Hotel Ponorogo&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMPratamaN&quot;&gt;Amaris Hotel Pratama Nusa Dua&lt;/option&gt;
+                    &lt;option value=&quot; ASIAIDSANTAMSamarind&quot;&gt;Amaris Hotel Samarinda&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMSeasonsc&quot;&gt;Amaris Hotel Seasons City&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMSenen&quot;&gt;Amaris Hotel Senen&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMSimpangl&quot;&gt;Amaris Hotel Simpang Lima Semarang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMSunsetro&quot;&gt;Amaris Hotel Sunset Road&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMTebet&quot;&gt;Amaris Hotel Tebet&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMTendean&quot;&gt;Amaris Hotel Tendean&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMTeukuuma&quot;&gt;Amaris Hotel Teuku Umar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMThamrinc&quot;&gt;Amaris Hotel Thamrin City&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTPekalongan&quot;&gt;Hotel Santika Pekalongan&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTBSDCity&quot;&gt;Hotel Santika Premiere ICE BSD City&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMASBand&quot;&gt;Amaris Hotel Setiabudhi Bandung&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMMakassar&quot;&gt;Amaris Pettarani Makassar&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMMJogja&quot;&gt;Amaris Hotel Malioboro Jogja&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAMSatrioKJ&quot;&gt;Amaris Hotel Satrio Kuningan Jakarta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAmarisSolo&quot;&gt;Amaris Hotel Sriwedari Solo&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDSANTAmarisSa&quot;&gt;Amaris Hotel Sagan Jogja&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLTheAnvay&quot;&gt;The Anvaya Beach Resort Bali&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLHotelSan&quot;&gt;Hotel Santika Radial Palembang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLHotelSantik&quot;&gt;Hotel Santika Mega City Bekasi&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLAmarisHo&quot;&gt;Amaris Hotel Pluit Jakarta&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisMargo&quot;&gt;Amaris Hotel Margorejo Surabaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisHotel&quot;&gt;Amaris Hotel Serpong Tangerang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisHote0&quot;&gt;Amaris Hotel Mampang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisHote1&quot;&gt;Amaris Hotel Padang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisHote2&quot;&gt;Amaris Hotel Serang Banten&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLAmarisHote3&quot;&gt;Amaris Hotel Bintoro Surabaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLHotelSanti0&quot;&gt;Hotel Santika Luwuk - Sulawesi Tengah&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLSantikaP&quot;&gt;Santika Premiere Beach Resort Belitung&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLAmarisKe&quot;&gt;Amaris Hotel Fachrudin - Tanah Abang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLSantikaPrem&quot;&gt;Hotel Santika Premiere Bandara - Palembang&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLSantikaSuka&quot;&gt;Hotel Santika Sukabumi&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLSantikaAmbo&quot;&gt;Hotel Santika Premiere Ambon&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLHotelSa0&quot;&gt;Hotel Santika Garut&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDASIHTLKampiSur&quot;&gt;Kampi Surabaya&lt;/option&gt;
+                    &lt;option value=&quot;ASIAIDHTLHotelSanti1&quot;&gt;Hotel Santika Gresik&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;    &lt;!-- Check-in --&gt;
+    &lt;div class=&quot;field dates checkin&quot;&gt;
+        &lt;label&gt;Check-in Date&lt;/label&gt;
+        &lt;div class=&quot;selects&quot;&gt;
+            &lt;select name=&quot;fromday&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+                    &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+                    &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+                    &lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+                    &lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+                    &lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+                    &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+                    &lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+                    &lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+                    &lt;option value=&quot;13&quot;&gt;13&lt;/option&gt;
+                    &lt;option value=&quot;14&quot;&gt;14&lt;/option&gt;
+                    &lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
+                    &lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;
+                    &lt;option value=&quot;17&quot;&gt;17&lt;/option&gt;
+                    &lt;option value=&quot;18&quot;&gt;18&lt;/option&gt;
+                    &lt;option value=&quot;19&quot;&gt;19&lt;/option&gt;
+                    &lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+                    &lt;option value=&quot;21&quot;&gt;21&lt;/option&gt;
+                    &lt;option value=&quot;22&quot;&gt;22&lt;/option&gt;
+                    &lt;option value=&quot;23&quot;&gt;23&lt;/option&gt;
+                    &lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;
+                    &lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+                    &lt;option value=&quot;26&quot;&gt;26&lt;/option&gt;
+                    &lt;option value=&quot;27&quot;&gt;27&lt;/option&gt;
+                    &lt;option value=&quot;28&quot;&gt;28&lt;/option&gt;
+                    &lt;option value=&quot;29&quot;&gt;29&lt;/option&gt;
+                    &lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+                    &lt;option value=&quot;31&quot;&gt;31&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;select name=&quot;frommonth&quot;&gt;
+                    &lt;option value=&quot;1&quot;&gt;January&lt;/option&gt;
+                    &lt;option value=&quot;2&quot;&gt;February&lt;/option&gt;
+                    &lt;option value=&quot;3&quot;&gt;March&lt;/option&gt;
+                    &lt;option value=&quot;4&quot;&gt;April&lt;/option&gt;
+                    &lt;option value=&quot;5&quot;&gt;May&lt;/option&gt;
+                    &lt;option value=&quot;6&quot;&gt;June&lt;/option&gt;
+                    &lt;option value=&quot;7&quot;&gt;July&lt;/option&gt;
+                    &lt;option value=&quot;8&quot;&gt;August&lt;/option&gt;
+                    &lt;option value=&quot;9&quot;&gt;September&lt;/option&gt;
+                    &lt;option value=&quot;10&quot;&gt;October&lt;/option&gt;
+                    &lt;option value=&quot;11&quot;&gt;November&lt;/option&gt;
+                    &lt;option value=&quot;12&quot;&gt;December&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;select name=&quot;fromyear&quot;&gt;
+                    &lt;option value=&quot;2019&quot;&gt;2019&lt;/option&gt;
+                    &lt;option value=&quot;2020&quot;&gt;2020&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Nights --&gt;
+    &lt;div class=&quot;field nights&quot;&gt;
+        &lt;label&gt;Number of nights&lt;/label&gt;
+        &lt;select name=&quot;nbdays&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+                &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+                &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+                &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+                &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+                &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+                &lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+                &lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+                &lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+                &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+                &lt;option value=&quot;11&quot;&gt;11&lt;/option&gt;
+                &lt;option value=&quot;12&quot;&gt;12&lt;/option&gt;
+                &lt;option value=&quot;13&quot;&gt;13&lt;/option&gt;
+                &lt;option value=&quot;14&quot;&gt;14&lt;/option&gt;
+                &lt;option value=&quot;15&quot;&gt;15&lt;/option&gt;
+                &lt;option value=&quot;16&quot;&gt;16&lt;/option&gt;
+                &lt;option value=&quot;17&quot;&gt;17&lt;/option&gt;
+                &lt;option value=&quot;18&quot;&gt;18&lt;/option&gt;
+                &lt;option value=&quot;19&quot;&gt;19&lt;/option&gt;
+                &lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+                &lt;option value=&quot;21&quot;&gt;21&lt;/option&gt;
+                &lt;option value=&quot;22&quot;&gt;22&lt;/option&gt;
+                &lt;option value=&quot;23&quot;&gt;23&lt;/option&gt;
+                &lt;option value=&quot;24&quot;&gt;24&lt;/option&gt;
+                &lt;option value=&quot;25&quot;&gt;25&lt;/option&gt;
+                &lt;option value=&quot;26&quot;&gt;26&lt;/option&gt;
+                &lt;option value=&quot;27&quot;&gt;27&lt;/option&gt;
+                &lt;option value=&quot;28&quot;&gt;28&lt;/option&gt;
+                &lt;option value=&quot;29&quot;&gt;29&lt;/option&gt;
+                &lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+                &lt;option value=&quot;31&quot;&gt;31&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;        &lt;!-- Number of adults selector --&gt;
+        &lt;div class=&quot;field adults_select&quot;&gt;
+            &lt;label for=&quot;adulteresa&quot;&gt;Number of adults&lt;/label&gt;
+            &lt;select name=&quot;adulteresa&quot;&gt;
+                    &lt;option value=&quot;1&quot; &gt;1&lt;/option&gt;
+                    &lt;option value=&quot;2&quot; selected=&quot;selected&quot;&gt;2&lt;/option&gt;
+                    &lt;option value=&quot;3&quot; &gt;3&lt;/option&gt;
+                    &lt;option value=&quot;4&quot; &gt;4&lt;/option&gt;
+                    &lt;option value=&quot;5&quot; &gt;5&lt;/option&gt;
+                    &lt;option value=&quot;6&quot; &gt;6&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;        &lt;!-- Number of children selector --&gt;
+        &lt;div class=&quot;field children_select&quot;&gt;
+            &lt;label for=&quot;enfantresa&quot;&gt;Number of children&lt;/label&gt;
+            &lt;select name=&quot;enfantresa&quot;&gt;
+                    &lt;option value=&quot;0&quot; selected=&quot;selected&quot;&gt;0&lt;/option&gt;
+                    &lt;option value=&quot;1&quot; &gt;1&lt;/option&gt;
+                    &lt;option value=&quot;2&quot; &gt;2&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;        &lt;!-- Promo Code --&gt;
+        &lt;div class=&quot;field promo_code&quot;&gt;
+            &lt;label for=&quot;AccessCode&quot;&gt;Promo Code&lt;/label&gt;
+            &lt;input type=&quot;text&quot; name=&quot;AccessCode&quot; value=&quot;&quot;  autocomplete=&quot;off&quot; /&gt;
+        &lt;/div&gt;    &lt;input name=&quot;B1&quot; type=&quot;button&quot; value=&quot;Book now&quot; onclick=&quot;hhotelDispoprice(this.form)&quot; class=&quot;submit&quot;&gt;
+    &lt;a href=&quot;javascript:;&quot; onclick=&quot;hhotelcancel();&quot; class=&quot;cancel&quot;&gt;Cancel a booking&lt;/a&gt;
+&lt;/form&gt;</textarea>
+            </div>
+        </div>
+        <div class="col documentation">
+            <h1>Quick search integration documentation</h1>
+            <p><a class="download" href="http://dev.fbwebprogram.com/qsgen/data/cfc5505b3199ad765be40591b7b07dea/crs.zip">Download this as a zip file.</a></p>
+            <section class="parameters">
+                <h2>Parameters</h2>
+                    <h3>Properties'  connect names</h3>
+                    <ul>
+                            <li><strong>The Kayana Seminyak Bali</strong> = <span>ASIAIDSANTKayanasem</span></li>
+                            <li><strong>Amaris Hotel Ambon</strong> = <span>ASIAIDSANTAMAmbon</span></li>
+                            <li><strong>The Samaya Seminyak Bali</strong> = <span>ASIAIDSANTSamay</span></li>
+                            <li><strong>The Samaya Ubud Bali - Full Service Villa &amp; Spa Resort</strong> = <span>ASIAIDSANTSamayub</span></li>
+                            <li><strong>Amaris Hotel Bandara Soekarno Hatta</strong> = <span>ASIAIDSANTAMBandaras</span></li>
+                            <li><strong>Amaris Hotel Banjar</strong> = <span>ASIAIDSANTAMBanjar</span></li>
+                            <li><strong>Hotel Santika Premiere Bintaro</strong> = <span>ASIAIDSANTBintaro</span></li>
+                            <li><strong>Hotel Santika Premiere Gubeng Surabaya</strong> = <span>ASIAIDSANTGubengsu</span></li>
+                            <li><strong>Hotel Santika Premiere Slipi Jakarta</strong> = <span>ASIAIDSANTJakarta</span></li>
+                            <li><strong>Hotel Santika Premiere Jogja</strong> = <span>ASIAIDSANTJogja</span></li>
+                            <li><strong>Amaris Hotel Bekasi Barat</strong> = <span>ASIAIDSANTAMBekasiba</span></li>
+                            <li><strong>Hotel Santika Premiere Kota Harapan Indah - Bekasi</strong> = <span>ASIAIDSANTKotahara</span></li>
+                            <li><strong>Amaris Hotel Bengkulu</strong> = <span>ASIAIDSANTAMBengkulu</span></li>
+                            <li><strong>Hotel Santika Premiere Malang</strong> = <span>ASIAIDSANTMalang</span></li>
+                            <li><strong>Hotel Santika Premiere Semarang</strong> = <span>ASIAIDSANTSemarang</span></li>
+                            <li><strong>Santika Premiere Dyandra Hotel &amp; Convention Medan</strong> = <span>ASIAIDSANTDyandra</span></li>
+                            <li><strong>Amaris Hotel Bugis Singapore</strong> = <span>ASIASGSANTAMBugissin</span></li>
+                            <li><strong>Hotel Santika Premiere Hayam Wuruk Jakarta</strong> = <span>ASIAIDSANTHayamwu</span></li>
+                            <li><strong>Amaris Hotel Cihampelas</strong> = <span>ASIAIDSANTAMCihampel</span></li>
+                            <li><strong>Amaris Hotel Cilegon</strong> = <span> ASIAIDSANTAMCilegon</span></li>
+                            <li><strong>Amaris Hotel Cimanuk</strong> = <span>ASIAIDSANTAMCimanuk</span></li>
+                            <li><strong>Amaris Hotel Cirebon</strong> = <span>ASIAIDSANTAMCirebon</span></li>
+                            <li><strong>Hotel Santika Bandung</strong> = <span> ASIAIDSANTBandung</span></li>
+                            <li><strong>Hotel Santika Bangka</strong> = <span>ASIAIDSANTBangka</span></li>
+                            <li><strong>Amaris Hotel Dewi Sri</strong> = <span>ASIAIDSANTAMDewisri</span></li>
+                            <li><strong>Hotel Santika Banyuwangi</strong> = <span>ASIAIDSANTBanyuwan</span></li>
+                            <li><strong>Amaris Hotel Diponegoro</strong> = <span>ASIAIDSANTAMDiponego</span></li>
+                            <li><strong>Hotel Santika Bengkulu</strong> = <span>ASIAIDSANTBengkulu</span></li>
+                            <li><strong>Hotel Santika Bogor</strong> = <span>ASIAIDSANTBogor</span></li>
+                            <li><strong>Amaris Hotel Dr. Susilo Grogol</strong> = <span>ASIAIDSANTAMDrsusilo</span></li>
+                            <li><strong>Hotel Santika BSD City - Serpong</strong> = <span>ASIAIDSANTSerpong</span></li>
+                            <li><strong>Hotel Santika Cikarang</strong> = <span>ASIAIDSANTCikarang</span></li>
+                            <li><strong>Amaris Hotel Embong Malang</strong> = <span>ASIAIDSANTAMEmbongma</span></li>
+                            <li><strong>Hotel Santika Cirebon</strong> = <span>ASIAIDSANTCirebon</span></li>
+                            <li><strong>Hotel Santika Depok</strong> = <span>ASIAIDSANTDepok</span></li>
+                            <li><strong>Amaris Hotel Gorontalo</strong> = <span>ASIAIDSANTAMGorontal</span></li>
+                            <li><strong>Hotel Santika Jemursari</strong> = <span>ASIAIDSANTJemursari</span></li>
+                            <li><strong>Amaris Hotel Hertasning Makassar</strong> = <span>ASIAIDSANTAMHertasni</span></li>
+                            <li><strong>Hotel Santika Kelapa Gading</strong> = <span>ASIAIDSANTKelapagad</span></li>
+                            <li><strong>Amaris Hotel Juanda</strong> = <span>ASIAIDSANTAMJuanda</span></li>
+                            <li><strong>Amaris Hotel Karawang</strong> = <span>ASIAIDSANTAMKarawang</span></li>
+                            <li><strong>Amaris Hotel Kupang</strong> = <span>ASIAIDSANTAMKupang</span></li>
+                            <li><strong>Hotel Santika Kuta</strong> = <span>ASIAIDSANTKuta</span></li>
+                            <li><strong>Hotel Santika Makassar</strong> = <span>ASIAIDSANTMakassar</span></li>
+                            <li><strong>Amaris Hotel La Codefin Kemang</strong> = <span>ASIAIDSANTAMCodefink</span></li>
+                            <li><strong>Hotel Santika Mataram - Lombok</strong> = <span>ASIAIDSANTMataraml</span></li>
+                            <li><strong>Hotel Amaris Kuta - Bali</strong> = <span>ASIAIDSANTAMLebakBen</span></li>
+                            <li><strong>Hotel Santika Palu</strong> = <span>ASIAIDSANTPalu</span></li>
+                            <li><strong>Hotel Santika Pandegiling Surabaya</strong> = <span>ASIAIDSANTPandegil</span></li>
+                            <li><strong>Amaris Hotel Legian</strong> = <span>ASIAIDSANTAMLegian</span></li>
+                            <li><strong>Hotel Santika Pontianak</strong> = <span>ASIAIDSANTPontianak</span></li>
+                            <li><strong>Amaris Hotel Madiun</strong> = <span>ASIAIDSANTAMMadiun</span></li>
+                            <li><strong>Amaris Hotel Malang</strong> = <span>ASIAIDSANTAMMalang</span></li>
+                            <li><strong>Hotel Santika Siligita</strong> = <span>ASIAIDSANTSiligita</span></li>
+                            <li><strong>Hotel Santika Taman Mini Indonesia Indah</strong> = <span>ASIAIDSANTTaman</span></li>
+                            <li><strong>Amaris Hotel Mangga Besar</strong> = <span>ASIAIDSANTAMManggabe</span></li>
+                            <li><strong>Hotel Santika Tasikmalaya</strong> = <span>ASIAIDSANTTasikmala</span></li>
+                            <li><strong>Amaris Hotel Mangga Dua Square</strong> = <span>ASIAIDSANTAMManggaDu</span></li>
+                            <li><strong>Hotel Santika Seminyak</strong> = <span>ASIAIDSANTSeminyak</span></li>
+                            <li><strong>Amaris Hotel Muara Bungo</strong> = <span>ASIAIDSANTAMMuaraBun</span></li>
+                            <li><strong>Amaris Hotel Nagoya Hill - Batam</strong> = <span>ASIAIDSANTAMNagoyahi</span></li>
+                            <li><strong>Amaris Hotel Padjajaran Bogor</strong> = <span>ASIAIDSANTAMPadjajar</span></li>
+                            <li><strong>Amaris Hotel Pakuan Bogor</strong> = <span>ASIAIDSANTAMPakuanbo</span></li>
+                            <li><strong>Amaris Hotel Palangkaraya</strong> = <span>ASIAIDSANTAMPalangka</span></li>
+                            <li><strong>Amaris Hotel Palembang</strong> = <span>ASIAIDSANTAMPalemban</span></li>
+                            <li><strong>Amaris Hotel Panakkukang</strong> = <span>ASIAIDSANTAMPanakkuk</span></li>
+                            <li><strong>Amaris Hotel Pancoran</strong> = <span>ASIAIDSANTAMPancoran</span></li>
+                            <li><strong>Amaris Hotel Panglima Polim</strong> = <span>ASIAIDSANTAMPanglima</span></li>
+                            <li><strong>Amaris Hotel Citraraya</strong> = <span>ASIAIDSANTAMCitrara</span></li>
+                            <li><strong>Amaris Hotel Panglima Polim 2</strong> = <span>ASIAIDSANTAMPangPoli</span></li>
+                            <li><strong>Amaris Hotel Pasar Baru</strong> = <span>ASIAIDSANTAMPasarbar</span></li>
+                            <li><strong>Amaris Hotel Pekanbaru</strong> = <span>ASIAIDSANTAMPekanbar</span></li>
+                            <li><strong>Amaris Hotel Pemuda</strong> = <span>ASIAIDSANTAMPemuda</span></li>
+                            <li><strong>Amaris Hotel Ponorogo</strong> = <span>ASIAIDSANTAMPonorogo</span></li>
+                            <li><strong>Amaris Hotel Pratama Nusa Dua</strong> = <span>ASIAIDSANTAMPratamaN</span></li>
+                            <li><strong>Amaris Hotel Samarinda</strong> = <span> ASIAIDSANTAMSamarind</span></li>
+                            <li><strong>Amaris Hotel Seasons City</strong> = <span>ASIAIDSANTAMSeasonsc</span></li>
+                            <li><strong>Amaris Hotel Senen</strong> = <span>ASIAIDSANTAMSenen</span></li>
+                            <li><strong>Amaris Hotel Simpang Lima Semarang</strong> = <span>ASIAIDSANTAMSimpangl</span></li>
+                            <li><strong>Amaris Hotel Sunset Road</strong> = <span>ASIAIDSANTAMSunsetro</span></li>
+                            <li><strong>Amaris Hotel Tebet</strong> = <span>ASIAIDSANTAMTebet</span></li>
+                            <li><strong>Amaris Hotel Tendean</strong> = <span>ASIAIDSANTAMTendean</span></li>
+                            <li><strong>Amaris Hotel Teuku Umar</strong> = <span>ASIAIDSANTAMTeukuuma</span></li>
+                            <li><strong>Amaris Hotel Thamrin City</strong> = <span>ASIAIDSANTAMThamrinc</span></li>
+                            <li><strong>Hotel Santika Pekalongan</strong> = <span>ASIAIDSANTPekalongan</span></li>
+                            <li><strong>Hotel Santika Premiere ICE BSD City</strong> = <span>ASIAIDSANTBSDCity</span></li>
+                            <li><strong>Amaris Hotel Setiabudhi Bandung</strong> = <span>ASIAIDSANTAMASBand</span></li>
+                            <li><strong>Amaris Pettarani Makassar</strong> = <span>ASIAIDSANTAMMakassar</span></li>
+                            <li><strong>Amaris Hotel Malioboro Jogja</strong> = <span>ASIAIDSANTAMMJogja</span></li>
+                            <li><strong>Amaris Hotel Satrio Kuningan Jakarta</strong> = <span>ASIAIDSANTAMSatrioKJ</span></li>
+                            <li><strong>Amaris Hotel Sriwedari Solo</strong> = <span>ASIAIDSANTAmarisSolo</span></li>
+                            <li><strong>Amaris Hotel Sagan Jogja</strong> = <span>ASIAIDSANTAmarisSa</span></li>
+                            <li><strong>The Anvaya Beach Resort Bali</strong> = <span>ASIAIDASIHTLTheAnvay</span></li>
+                            <li><strong>Hotel Santika Radial Palembang</strong> = <span>ASIAIDASIHTLHotelSan</span></li>
+                            <li><strong>Hotel Santika Mega City Bekasi</strong> = <span>ASIAIDHTLHotelSantik</span></li>
+                            <li><strong>Amaris Hotel Pluit Jakarta</strong> = <span>ASIAIDASIHTLAmarisHo</span></li>
+                            <li><strong>Amaris Hotel Margorejo Surabaya</strong> = <span>ASIAIDHTLAmarisMargo</span></li>
+                            <li><strong>Amaris Hotel Serpong Tangerang</strong> = <span>ASIAIDHTLAmarisHotel</span></li>
+                            <li><strong>Amaris Hotel Mampang</strong> = <span>ASIAIDHTLAmarisHote0</span></li>
+                            <li><strong>Amaris Hotel Padang</strong> = <span>ASIAIDHTLAmarisHote1</span></li>
+                            <li><strong>Amaris Hotel Serang Banten</strong> = <span>ASIAIDHTLAmarisHote2</span></li>
+                            <li><strong>Amaris Hotel Bintoro Surabaya</strong> = <span>ASIAIDHTLAmarisHote3</span></li>
+                            <li><strong>Hotel Santika Luwuk - Sulawesi Tengah</strong> = <span>ASIAIDHTLHotelSanti0</span></li>
+                            <li><strong>Santika Premiere Beach Resort Belitung</strong> = <span>ASIAIDASIHTLSantikaP</span></li>
+                            <li><strong>Amaris Hotel Fachrudin - Tanah Abang</strong> = <span>ASIAIDASIHTLAmarisKe</span></li>
+                            <li><strong>Hotel Santika Premiere Bandara - Palembang</strong> = <span>ASIAIDHTLSantikaPrem</span></li>
+                            <li><strong>Hotel Santika Sukabumi</strong> = <span>ASIAIDHTLSantikaSuka</span></li>
+                            <li><strong>Hotel Santika Premiere Ambon</strong> = <span>ASIAIDHTLSantikaAmbo</span></li>
+                            <li><strong>Hotel Santika Garut</strong> = <span>ASIAIDASIHTLHotelSa0</span></li>
+                            <li><strong>Kampi Surabaya</strong> = <span>ASIAIDASIHTLKampiSur</span></li>
+                            <li><strong>Hotel Santika Gresik</strong> = <span>ASIAIDHTLHotelSanti1</span></li>
+                    </ul>
+                <p><strong>Your cluster name:</strong> <span>asiasantikahotels</span></p>
+            </section>
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>
+                        <strong>Include the following javascript files</strong> before the end of the <span>&lt;body&gt;</span>
+                            tag of your document every webpage needing the form. Keep this order:<br/>
+                        <a target="_blank" href="fbparam.js">fbparam.js</a><br/>
+                        <a target="_blank" href="fblib.js">fblib.js</a><br/><br/>
+<pre>
+&lt;script src="PATH_TO_YOUR_JS_DIR/fbparam.js"&gt;&lt;/script&gt;
+&lt;script src="PATH_TO_YOUR_JS_DIR/fblib.js"&gt;&lt;/script&gt;
+</pre>                    </li>
+                    <li><strong>Include the form's html</strong>. You can copy-paste it from this documentation and
+                        modify it based on your needs, keeping identifiers and names unchanged.</li>
+                    <li>
+                        <strong>Make sure that the <span>start();</span> function is executed</strong> when document
+                        is ready. For example:<br/><br/>
+                        <span>&lt;body onload="start();"&gt;</span><br/><br/>
+                        If you are using jQuery you can add the following piece of code to your main javascript file.
+<pre>
+$(document).ready(function() {
+    if (typeof start !== 'undefined') {
+        start();
+    }
+});
+</pre>                    </li>
+                </ol>
+            </section>
+            <section class="params">
+                <h2>Parameters reference</h2>
+                <p><strong>Base url: </strong><span>https://redirect.fastbooking.com/DIRECTORY/dispoprice.phtml</span></p>
+                <p>
+                    <strong>Direct link to your booking engine: </strong> <a class="gotobe" href="https://redirect.fastbooking.com/DIRECTORY/dispoprice.phtml?showPromotions=1&amp;Hotelnames=All&amp;Clusternames=asiasantikahotels" target="_blank" title="Open booking engine">&nbsp;&rarr;&nbsp;</a> <br/>
+                    <span class="direct_link">https://redirect.fastbooking.com/DIRECTORY/dispoprice.phtml?showPromotions=1&amp;Hotelnames=All&amp;Clusternames=asiasantikahotels</span>
+                </p>
+                <p>The following parameters can be passed in the query string (GET parameters):</p>
+                <ul class="params">
+                    <li class="required">
+                        <span>showPromotions</span>
+                        - internal parameter, always pass <span>1</span> as value
+                    </li>
+                        <li class="required">
+                            <span>Clusternames</span>
+                            - identifies the hotel's "Cluster", value is specified above
+                        </li>
+                        <li class="required">
+                            <span>Hotelnames</span>
+                            - identifies the hotel's "Connectname", value(s) are specified above. In order to display the
+                            list of properties in the group,  pass the value "All"
+                        </li>
+                    <li>
+                        <span>fromday</span>
+                        - day of the month for check-in date.
+                    </li>
+                    <li>
+                        <span>frommonth</span>
+                        - number of month for check-in date.
+                    </li>
+                    <li>
+                        <span>fromyear</span>
+                        - year for check-in date.
+                    </li>
+                    <li>
+                        <span>nbdays</span>
+                        - number of nights. As an alternative, <span>today</span>, <span>tomonth</span>, <span>toyear</span>
+                        parameters can be used:
+                        <ul>
+                            <li>
+                                <span>today</span>
+                                - day of the month for check-out date.
+                            </li>
+                            <li>
+                                <span>tomonth</span>
+                                - month for check-out date.
+                            </li>
+                            <li>
+                                <span>toyear</span>
+                                - year for check-out date.
+                            </li>
+                        </ul>
+                    </li>
+                        <li>
+                            <span>adulteresa</span>
+                            - number of adults
+                        </li>
+                        <li>
+                            <span>enfantresa</span>
+                            - number of children
+                        </li>
+                    <li>
+                        <span>AccessCode</span>
+                        - Promo / IATA code. If you are grouping your offers by "Treatment", this parameter needs to be
+                        passed anyways.
+                    </li>
+                    <li>
+                        <span>advance</span>
+                        - Forces the checkin date on the booking engine to today plus the value of the parameters in days.
+                        For example: advance=7-days will force today + 7 days. Ideal to build "Book now" links without
+                        selection of the checkin date.
+                    </li>
+                    <li>
+                        <span>locale</span>
+                        - ATTRACTION language. Allows to force the booking engine to load in a specific language.
+                        If not passed or passed empty, the user's browser language will be detected.<br/>
+                        List of supported language codes:
+                        <ul>
+                            <li><span>ar_SA</span> Arabic</li>
+                            <li><span>bg_BG</span> Bulgarian</li>
+                            <li><span>ca_ES</span> Catalan</li>
+                            <li><span>cs_CZ</span> Czech</li>
+                            <li><span>da_DK</span> Danish</li>
+                            <li><span>de_DE</span> German</li>
+                            <li><span>el_GR</span> Greek</li>
+                            <li><span>en_GB</span> English</li>
+                            <li><span>es_ES</span> Spanish</li>
+                            <li><span>fa_IR</span> Farsi</li>
+                            <li><span>fi_FI</span> Finnish</li>
+                            <li><span>fr_FR</span> French</li>
+                            <li><span>he_IL</span> Hebrew</li>
+                            <li><span>hr_HR</span> Croatian</li>
+                            <li><span>hu_HU</span> Hungarian</li>
+                            <li><span>id_ID</span> Indonesian</li>
+                            <li><span>is_IS</span> Icelandic</li>
+                            <li><span>it_ID</span> Italian</li>
+                            <li><span>ja_JP</span> Japanese</li>
+                            <li><span>ko_KR</span> Korean</li>
+                            <li><span>nl_NL</span> Dutch</li>
+                            <li><span>nn_NO</span> Norwegian (Nykorsk)</li>
+                            <li><span>pl_PL</span> Polish</li>
+                            <li><span>pt_PT</span> Portuguese</li>
+                            <li><span>ro_RO</span> Romanian</li>
+                            <li><span>ru_RU</span> Russian</li>
+                            <li><span>sk_SK</span> Slovak</li>
+                            <li><span>sl_SI</span> Slovenian</li>
+                            <li><span>sr_RS</span> Serbian</li>
+                            <li><span>sv_SE</span> Swedish</li>
+                            <li><span>th_TH</span> Thai</li>
+                            <li><span>tr_TR</span> Turkish</li>
+                            <li><span>vi_VN</span> Vietnamese</li>
+                            <li><span>zh_Hans_CN</span> Chinese (simplified)</li>
+                            <li><span>zh_Hant_HK</span> Chinese (traditional)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>

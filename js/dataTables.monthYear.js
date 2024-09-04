@@ -1,0 +1,1 @@
+jQuery.fn.dataTableExt.oSort["monthYear-sort-asc"]=function(a,b){a=new Date("01 "+a);b=new Date("01 "+b);return a<b?-1:a>b?1:0};jQuery.fn.dataTableExt.oSort["monthYear-sort-desc"]=function(a,b){a=new Date("01 "+a);b=new Date("01 "+b);return a<b?1:a>b?-1:0}

@@ -1,0 +1,94 @@
+<link href="../css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="keycloak.js"></script>
+    <script>
+        var keycloak = Keycloak();
+        keycloak.init().success(function (authenticated) {
+          var action = "<?php echo $action = (isset($_POST['action'])) ? $_POST['action'] : '' ; ?>";
+          var menu = "<?php echo $menu = (isset($_SESSION['menu_mykg'])) ? $_SESSION['menu_mykg'] : '' ; ?>";
+
+          if (action == 'logout')
+          {
+
+            javascript:keycloak.logout();
+            
+          }
+          else{
+            if (authenticated) {
+              keycloak.loadUserInfo().success(function (result) {
+                if (menu != '') {
+                  $.ajax({
+                    url: "../include/setSession_myKg.php",
+                    type: "POST",
+                    data: "nik="+keycloak.userInfo.preferred_username,
+                    cache: false,
+                    success: function(msg){
+                      console.log('test masuk');
+                      document.location= "../"+menu;
+                    }
+                  });
+                }
+                else{
+                  $.ajax({
+                    url: "../include/setSession_myKg.php",
+                    type: "POST",
+                    data: "nik="+keycloak.userInfo.preferred_username,
+                    cache: false,
+                    success: function(msg){
+                      console.log('test masuk2');
+                      document.location= "../home.php";
+                    }
+                  });
+                }
+              });
+            } else {
+              javascript:keycloak.login();
+              console.log('test3');
+              displayLoggedOff();
+            }
+          }
+        }).error(function () {
+          $.ajax({
+            url: "../include/setSession_myKg.php",
+            type: "POST",
+            data: "error="+1,
+            cache: false,
+            success: function(msg){
+              var error = "<?php echo $menu = (isset($_SESSION['error'])) ? $_SESSION['error'] : '' ; ?>";
+              if (error <= 5)
+              {
+                if (action == 'logout')
+                {
+                  javascript:keycloak.logout();
+                }
+                else{
+                  javascript:keycloak.login();
+                }
+              }
+              else{
+                alert('failed to initialize');
+                document.location= "../index.php";
+              }
+            }
+          });
+        });
+
+        var displaySomeUserInfo = function (kc) {
+          var message = "<h1>";
+          message += 'Hello ' + kc.userInfo.name;
+          message += "</h1>";
+          message += "<p>";
+          message += "registered email : " + kc.userInfo.email;
+          message += "<br />";
+          message += "registered user name : " + kc.userInfo.preferred_username;
+          message += "</p>";
+          return message;
+        }
+
+        var displayLoggedOff = function () {
+        }
+
+        function toTokenTest(){
+          location.href= location.href + 'check-token.php?token='+document.getElementById('token').value;
+        }
+</script>
